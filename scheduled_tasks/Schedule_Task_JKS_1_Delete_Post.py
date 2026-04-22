@@ -2,15 +2,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+from pathlib import path
 import schedule
 import time
 import sys
+import os
+
+load_dotenv()  # loading the environment variable(.env) file
 
 def run_script():
     print('-----------------------\nEntered into the run_script()\n-----------------------')
 
-    target_username = "user25"
-    target_password = "abcd@123"
+    target_username = os.getenv('username')
+    target_password = os.getenv('password')
 
     url = "https://mohits23.pythonanywhere.com/login/"
 
