@@ -1,17 +1,23 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from dotenv import load_dotenv
+from pathlib import Path
 #import subprocess
 import schedule
 import time
 import sys
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(os.path.join(BASE_DIR, ".env"))  # loading the environment variable(.env) file
+
 def run_script():
     print('-----------------------\nEntered into the run_script()\n-----------------------')
     # subprocess.run(["python", "F:\Trashshots\Scheduled_Program_Test\Test_Qnotes_Selenium.py"])
 
-    target_username = "acer"
-    target_password = "abcd@123"
+    target_username = os.getenv('username')
+    target_password = os.getenv('password')
 
     url = "https://qnotes23.pythonanywhere.com/authentication/"
 

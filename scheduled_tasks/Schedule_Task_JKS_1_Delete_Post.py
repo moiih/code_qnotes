@@ -3,13 +3,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from pathlib import path
+from pathlib import Path
 import schedule
 import time
 import sys
 import os
 
-load_dotenv()  # loading the environment variable(.env) file
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(os.path.join(BASE_DIR, ".env"))  # loading the environment variable(.env) file
 
 def run_script():
     print('-----------------------\nEntered into the run_script()\n-----------------------')
