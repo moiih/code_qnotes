@@ -1,0 +1,347 @@
+/* background: rgb(255, 255, 255, 0.5);    // (0.5) as last(fourth) parameter in "rgb()" creates transparency effect on page    */
+
+
+    /*  CSS Utilities */
+
+/* body {
+    background-image: linear-gradient(to right bottom, red, pink);
+} */
+
+#myNavTitle {
+    font-weight: bold;
+    float: right;
+    color: white;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.grid_center  {
+    display: grid;
+    place-items: center;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+
+
+
+    /*  Logi and Sign-Up CSS  */
+#login-signup {
+    background-image: linear-gradient(to right bottom, red, pink);
+}
+
+#login_box_shadow {
+    background-color: yellow;
+    box-shadow: 30px 30px blue;
+    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#signup_box_shadow {
+    background-color: white;
+    box-shadow: 30px 30px purple;
+    border-radius: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#change_pass_box_shadow {
+    /* background-color: #db682a; */
+    box-shadow: 30px 30px #ff7300;
+    /* background-image: linear-gradient(to right bottom, #62db2a, #838AD9); */
+    background-image: linear-gradient(to top, #2596c2, #0089d6, #0076e3, #5e59e0, #9c1cc9);
+    border-radius: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#signup-head {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+    padding-left: 50px;
+    margin-top: 10px;
+    border-radius: 60px;
+    color: white;
+    background: linear-gradient(to right, red, blue);
+}
+
+#login-head {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+    padding-left: 60px;
+    margin-top: 10px;
+    border-radius: 60px;
+    color: white;
+    background: linear-gradient(to right, red, blue);
+}
+
+#otp-head {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    border-radius: 60px;
+    color: white;
+    background: linear-gradient(to right, red, blue);
+}
+
+#login-btn, #signup-btn, #otp_btn, #old_btn {
+    background-color: blue;
+    color: white;
+}
+
+#login-error {
+    font-size: 14px;
+    color: black;
+}
+
+#forbidden {
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#forbidden-border {
+    top: 30%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 55px;
+}
+
+
+/* #signup-btn {
+    background-color: blue;
+    color: white;
+} */
+
+/* #image-1a {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+} */
+
+#image-2a, #image-2b {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+    /* Menu Togle Button */
+#menu-toggle {
+    border: none;
+    outline: none;
+}
+
+
+    /* To Hide One Tree On Small Screen Devices */
+@media screen and (max-width: 600px) {
+    #image-1a-div {
+        display: none;
+    }
+    #image-2a-div {
+        display: none;
+    }
+    #image-2b {
+        transform: rotateY(0deg);
+    }
+
+    #login_box_shadow {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    /* #login-error {
+        visibility: hidden;
+    } */
+    #login-error {
+        /* visibility: visible;         */
+        /* content: "*Invalid User or Password."; */
+        color: red;
+        /* font-weight: 700;         */
+    }
+
+    #change_pass_box_shadow {
+        /* background-color: #db682a; */
+        /* box-shadow: 30px 30px #ff7300;   */
+        /* background-image: linear-gradient(to right bottom, #62db2a, #838AD9); */
+        /* background-image: linear-gradient(to top, #2596c2, #0089d6, #0076e3, #5e59e0, #9c1cc9); */
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .change_pass_label {
+        font-size: 16px;
+    }
+
+    #forbidden {
+        font-size: 20px;
+        padding: 10px;
+    }
+    #forbidden-border {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+    /* Animated Login Form */
+
+/* .text-center{
+	color:#fff;
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+} */
+/* .box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+} */
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:17px;
+	color:#fff;
+	transition: all 0.3s ease-in-out;
+}
+.input-container input{
+  border:0;
+  border-bottom:1px solid #555;
+  background:transparent;
+  width:100%;
+  padding:11px 0 5px 0;
+  font-size:17px;
+  color:#fff;
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+}
+.input-container input:focus{
+ border:none;
+ outline:none;
+ border-bottom: 3px solid #e74c3c;
+ transition: all 0.4s ease-in-out;
+}
+/* .btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+} */
+/*.btn:after{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+}*/
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top: -12px;
+	font-size:12px;
+}
+
+
+
+
+
+    /*  Change Password Page CSS  */
+.full-page-div {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(221, 25, 25, 0.8);
+    /* text-align: center; */
+    /* padding-top: 100px; */
+    /* margin-top: 56px; */
+}
+
+.transform_center {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+    /*   "HOME.html" CSS   */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 0px;
+    /* place-items: center; */
+}
+
+#home-item-1 {
+    background-color: #ff7300;
+    /* padding: 10px; */
+}
+
+#home-item-2 {
+    background-color: chartreuse;
+    /* padding: 10px; */
+}
+
+
+
+
+
