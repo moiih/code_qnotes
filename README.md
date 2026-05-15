@@ -1,10 +1,16 @@
 # Qnotes Connect: Email Website
 
 - This is a website project designed in a like a typical Django Web App, specifically for other people to connect with me and know more about me. I have implemented the best security practices for securing guests' security & privacy🔒.
-- The web app features facility to send emails like password reset using email or sending user response to my inbox.
+- The web app features facility to send emails like password reset using email or sending user response to my inbox📬.
+
+**🌐 Link to the website below: ⏬**
+
+&emsp; &emsp; ***👉 &nbsp; [https://qnotes23.pythonanywhere.com/](https://qnotes23.pythonanywhere.com/)***
 
 
-***🎯 Motive:***
+
+- ### ***🎯 Motive of the web app:***
+
 If you like my work or my profile and want to connect with me, do hit me up using this website .... I am extremely excited to hear your thoughts or feedback from your side too. Glad to meet you in advance....;-)
 
 
@@ -21,10 +27,6 @@ If you like my work or my profile and want to connect with me, do hit me up usin
 
 <img width="1340" height="609" alt="Screenshot_20260515_175942_Chrome(1)" src="https://github.com/user-attachments/assets/08de0ea5-9a29-42e0-a2b3-c299e28efab9" />
 
-
-- ### Guest-Connect Form Page:
-
-<img width="800" height="1106" alt="Screenshot_20260515_175321_Chrome(1)" src="https://github.com/user-attachments/assets/f1f5eacc-48d8-4e29-bdb8-2af3c1097b99" />
 
 
 
